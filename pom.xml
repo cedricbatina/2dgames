@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Informations de base sur votre projet -->
+    <groupId>com.votreorganisation</groupId>
+    <artifactId>2dgames</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>2D Games</name>
+    <description>Projet pour divers jeux 2D.</description>
+
+    <!-- Configuration de la version de Java utilisée -->
+    <properties>
+        <maven.compiler.source>17.0.8</maven.compiler.source>
+        <maven.compiler.target>17.0.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- Ajoutez ici vos dépendances. Exemple :
+        <dependency>
+            <groupId>org.exemple</groupId>
+            <artifactId>exemple-artifact</artifactId>
+            <version>1.0</version>
+        </dependency>
+        -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Plugin Maven Compiler -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+
+            <!-- Autres plugins si nécessaire -->
+        </plugins>
+    </build>
+
+</project>
