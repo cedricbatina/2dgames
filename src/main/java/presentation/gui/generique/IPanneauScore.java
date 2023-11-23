@@ -1,4 +1,4 @@
-package com.2dgames.application.moteur.generique;
+package gui.generique;
 
 import javax.swing.JPanel;
 import java.beans.PropertyChangeListener;
