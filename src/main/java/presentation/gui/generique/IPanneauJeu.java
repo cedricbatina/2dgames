@@ -1,7 +1,8 @@
-package com.2dgames.application.moteur.generique;
+package presentation.gui.generique;
 
 import java.awt.Graphics;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public interface IPanneauJeu {
  boolean contains(int x, int y);

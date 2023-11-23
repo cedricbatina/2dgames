@@ -1,6 +1,5 @@
-package application.moteur.generique;
+package presentation.gui.generique;
 
-import gui.generique;
 import moteur.generique.IGui;
 import moteur.generique.EtatMoteur;
 import java.awt.Color;
@@ -105,4 +104,25 @@ public class PanneauJeu implements IPanneauJeu {
  public JPanel getPanneau() {
   return panneau;
  }
+
+ /*
+  * @Override
+  * public void dessineGameOver(Graphics g) {
+  * // TODO Auto-generated method stub
+  * throw new
+  * UnsupportedOperationException("Unimplemented method 'dessineGameOver'");
+  * }
+  * 
+  * @Override
+  * public int getHauteur() {
+  * // TODO Auto-generated method stub
+  * throw new UnsupportedOperationException("Unimplemented method 'getHauteur'");
+  * }
+  * 
+  * @Override
+  * public void getAireJeu(IAire spe) {
+  * // TODO Auto-generated method stub
+  * throw new UnsupportedOperationException("Unimplemented method 'getAireJeu'");
+  * }
+  */
 }

@@ -1,5 +1,7 @@
 package moteur.generique;
 
+import moteur.generique.EtatMoteur;
+//import presentation.gui.generique;
 import java.awt.Graphics;
 import java.beans.PropertyChangeListener;
 
@@ -8,11 +10,11 @@ public interface IMoteur {
 
  void terminerJeu();
 
- void setMoteurSpecifique(IFabriqueObjets spe);
+ void setMoteurSpecifique(IMoteurSpecifique spe);
 
- IFabriqueObjets getMoteurSpecifique();
+ IMoteurSpecifique getMoteurSpecifique();
 
-setGui(IGui g);
+ void setGui(IGui g);
 
  IGui getGui();
 

@@ -21,9 +21,11 @@ public interface IMoteurSpecifique {
 
  void toucheDroite();
 
- void getParamInt(int p);
+ int getParamInt(int p);
 
  String getParamString(int p);
 
  void setMoteur(IMoteur m);
+
+ void toucheGauche();
 }

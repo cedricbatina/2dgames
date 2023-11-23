@@ -1,4 +1,4 @@
-package gui.generique;
+package presentation.gui.generique;
 
 import javax.swing.JPanel;
 import java.beans.PropertyChangeListener;

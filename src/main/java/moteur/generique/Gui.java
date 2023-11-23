@@ -3,8 +3,15 @@ package moteur.generique;
 import java.awt.BorderLayout;
 
 import javax.swing.JFrame;
+import presentation.gui.generique.IPanneauControle;
+import presentation.gui.generique.IPanneauScore;
+import presentation.gui.generique.PanneauScore;
+import presentation.gui.generique.IPanneauJeu;
+import presentation.gui.generique.PanneauJeu;
 
-public class GUI implements IGUI {
+import presentation.gui.generique.PanneauControle;
+
+public class Gui implements IGui {
  private IPanneauControle p_controle;
  private IPanneauScore p_score;
  private IPanneauJeu p_jeu;
@@ -12,7 +19,7 @@ public class GUI implements IGUI {
  private JFrame fenetre;
  private IMeilleurScore meilleur_score;
 
- public GUI(String nom) {
+ public Gui(String nom) {
   fenetre = new JFrame(nom);
  }
 
@@ -87,7 +94,7 @@ public class GUI implements IGUI {
   return p_jeu.contains(x, y);
  }
 
- public void dessinGameover(Graphics g) {
-  p_jeu.dessinGameover();
+ public void dessinGameOver(Graphics g) {
+  p_jeu.dessineGameOver();
  }
 }

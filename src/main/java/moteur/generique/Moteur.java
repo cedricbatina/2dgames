@@ -3,9 +3,12 @@ package moteur.generique;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.awt.Graphics;
+import presentation.gui.generique.*;
+import moteur.generique.IMoteur;
+import moteur.generique.EtatMoteur;
 
 public class Moteur implements IMoteur {
- private IFabriqueObjets moteur;
+ private IMoteurSpecifique moteur;
  private IGui gui;
  private ISon son;
  protected EtatMoteur etat;
@@ -32,7 +35,7 @@ public class Moteur implements IMoteur {
 
  private void boucleDeJeu() {
   if (etat == EtatMoteur.INITIALISE || etat == EtatMoteur.GAMEOVER) {
-   moteur.generiqueJeu();
+   moteur.genererJeu();
    etat = EtatMoteur.EN_COURS;
 
   }
@@ -44,7 +47,7 @@ public class Moteur implements IMoteur {
     break;
    }
    if (etat == EtatMoteur.EN_COURS)
-    moteur.mettreAjourJeu();
+    moteur.mettreAJourJeu();
    gui.repaintPanneauJeu();
    tempsPris = (moteur.getPeriodeMaj() - tempsPris) / 1000000;
    if (tempsRestant < 10)
@@ -83,7 +86,7 @@ public class Moteur implements IMoteur {
  }
 
  public void toucheHaut() {
-  moteur.dessine(g);
+  moteur.toucheHaut();
  }
 
  public void toucheBas() {
@@ -140,4 +143,17 @@ public class Moteur implements IMoteur {
  public ISon getSon() {
   return son;
  }
+ /*
+  * @Override
+  * public void setMoteurSpecifique(IMoteurSpecifique spe) {
+  * throw new
+  * UnsupportedOperationException("Unimplemented method 'setMoteurSpecifique'");
+  * }
+  * 
+  * @Override
+  * public void setEtat(EtatMoteur e) {
+  * throw new UnsupportedOperationException("Unimplemented method 'setEtat'");
+  * }
+  */
+
 }

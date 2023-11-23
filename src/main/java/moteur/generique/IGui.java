@@ -1,3 +1,4 @@
+package moteur.generique;
 
 import java.awt.Graphics;
 
@@ -14,7 +15,7 @@ public interface IGui {
 
  void focusPanneauJeu();
 
- void dessinGameover(Graphics g);
+ void dessineGameover(Graphics g);
 
  public void setImageFondPanneauJeu(String s, Graphics g);
 

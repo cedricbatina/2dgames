@@ -1,36 +1,39 @@
-package com.2dgames.application.moteur.generique;
+package presentation.gui.generique;
 
-import moteur.generique.IMoteur;
+//import moteur.generique.IMoteur;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.beans.PropertyChangeEvent;
 
 public class PanneauScore implements IPanneauScore {
- private JTextField score;
- private JTextField niveau;
- private JPanel panneau;
+  private JTextField score;
+  private JTextField niveau;
+  private JPanel panneau;
 
- public PanneauScore() {
-  panneau = new JPanel();
-  JLabel labscore = new JLabel("Score");
-  panneau.add(labscore);
-  score.setEditable(false);
-  panneau.add(labniv);
-  niveau = new JTextField("1", 5);
-  niveau.setEditable(false);
-  panneau.add(niveau);
- }
+  public PanneauScore() {
+    panneau = new JPanel();
+    JLabel labscore = new JLabel("Score");
+    panneau.add(labscore);
+    score = new JTextField("0", 5);
+    score.setEditable(false);
+    panneau.add(score);
+    JLabel labniv = new JLabel("Niveau");
+    panneau.add(labniv);
+    niveau = new JTextField("1", 5);
+    niveau.setEditable(false);
+    panneau.add(niveau);
+  }
 
- public void propertyChange(PropertyChangeEvent e) {
-  String name = e.getPropertyName();
-  int valeur = (int) e.getNewValue();
-  if (name.equals("score"))
-   score.setText("" + valeur);
- }
+  public void propertyChange(PropertyChangeEvent e) {
+    String name = e.getPropertyName();
+    int valeur = (int) e.getNewValue();
+    if (name.equals("score"))
+      score.setText("" + valeur);
+  }
 
- public JPanel getPanneau() {
-  return panneau;
- }
+  public JPanel getPanneau() {
+    return panneau;
+  }
 
 }

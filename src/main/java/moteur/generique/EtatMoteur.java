@@ -1,5 +1,5 @@
 package moteur.generique;
 
-public enum EtatEnum {
+public enum EtatMoteur {
  INITIALISE, EN_COURS, ARRETE, GAMEOVER
 }

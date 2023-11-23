@@ -1,8 +1,8 @@
-package gui.generique
+package presentation.gui.generique;
 
 import moteur.generique.IMoteur;
 import moteur.generique.ISon;
-import moteur.generique.IGUI;
+import moteur.generique.IGui;
 import moteur.generique.EtatMoteur;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -16,6 +16,8 @@ import javax.swing.ImageSon;
 public class PanneauControle implements IPanneauControle {
   private IGui gui;
   private IMoteur moteur;
+  private IMoteur demarrer_pause;
+
   private JButton arret;
   private JButton son_on_off;
   private JPanel panneau;
@@ -37,6 +39,8 @@ public class PanneauControle implements IPanneauControle {
         moteur.setEtat(EtatMoteur.EN_COURS);
         demarrer_pause.setIcon(ipause);
         break;
+      default:
+        break;
     }
     arret.setEnabled(true);
     gui.focusPanneauJeu();
@@ -44,7 +48,7 @@ public class PanneauControle implements IPanneauControle {
 
   private void arreter(ActionEvent e) {
     moteur.setEtat(EtatMoteur.GAMEOVER);
-    demarrer_pause.setIcon(idemmarer);
+    demarrer_pause.setIcon(idemmarrer);
     demarrer_pause.setEnabled(true);
     arret.setEnabled(false);
     gui.repaintPanneauJeu();

@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Tetris",
+      "request": "launch",
+      "mainClass": "jeu.specifique.tetris.Tetris",
+      "projectName": "2dgames"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",

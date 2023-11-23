@@ -1,4 +1,4 @@
-package com.2dgames.presentation.gui.specifique;
+package presentation.gui.specifique;
 
 public interface AireJeuAbstrait {
 
