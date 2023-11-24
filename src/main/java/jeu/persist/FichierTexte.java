@@ -8,7 +8,7 @@ import java.io.FileWriter;
 
 public class FichierTexte implements IPersist {
  public ArrayList<Score> lireListe(String nom) {
-  File f = new File(PATH_SCORES + nom + ".sco.txt";
+  File f = new File(PATH_SCORES + nom + ".sco.txt");
   ArrayList<Score> res = new ArrayList<Score>();
   if (f.exists()) {
    try {

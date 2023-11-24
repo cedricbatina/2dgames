@@ -1,6 +1,6 @@
 package moteur.generique;
 
-import moteur.generique.EtatMoteur;
+//import moteur.generique.EtatMoteur;
 //import presentation.gui.generique;
 import java.awt.Graphics;
 import java.beans.PropertyChangeListener;
@@ -41,4 +41,6 @@ public interface IMoteur {
  ISon getSon();
 
  void addPropertyChangeListener(PropertyChangeListener pcl);
+
+ String getParamString(int i);
 }

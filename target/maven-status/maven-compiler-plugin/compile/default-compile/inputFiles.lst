@@ -19,6 +19,7 @@ D:\works\works\web_projects\2dgames\src\main\java\jeu\persist\IPersist.java
 D:\works\works\web_projects\2dgames\src\main\java\presentation\gui\generique\PanneauScore.java
 D:\works\works\web_projects\2dgames\src\main\java\moteur\specifique\tetris\MoteurTetris.java
 D:\works\works\web_projects\2dgames\src\main\java\moteur\generique\IGui.java
+D:\works\works\web_projects\2dgames\src\main\java\presentation\gui\generique\IAireJeu.java
 D:\works\works\web_projects\2dgames\src\main\java\presentation\gui\generique\IPanneauControle.java
 D:\works\works\web_projects\2dgames\src\main\java\presentation\gui\specifique\AireJeuAbstrait.java
 D:\works\works\web_projects\2dgames\src\main\java\jeu\specifique\snake\Serpent.java

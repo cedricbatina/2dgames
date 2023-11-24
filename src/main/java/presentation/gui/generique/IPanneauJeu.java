@@ -17,7 +17,7 @@ public interface IPanneauJeu {
 
  int getHauteur();
 
- void getAireJeu(IAire spe);
+ void getAireJeu(IAireJeu spe);
 
  JPanel getPanneau();
 }
